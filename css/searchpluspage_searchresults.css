@@ -1,0 +1,7 @@
+.highlight {font-weight: bold; text-transform:capitalize;}
+.fromToInfo {float: left; font-weight: bold;}
+.fromToInfo .littleWord {font-weight: normal;}
+.prevNextNumbers {margin-left: 150px;}
+	.prevNextNumbers .numbers span.currentNumber, .prevNextNumbers .numbers a.notCurrentNumber {padding: 0.17em 0.34em; margin: 0 0.3em }
+	.prevNextNumbers .numbers a.notCurrentNumber {color: #fff!important; background-color: #777; }
+	.prevNextNumbers .numbers span.currentNumber, .prevNextNumbers .numbers a.notCurrentNumber:hover {color: #000!important; background-color: #555; }

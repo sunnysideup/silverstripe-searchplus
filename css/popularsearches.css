@@ -1,0 +1,9 @@
+#SearchPlusPopularSearches table {}
+#SearchPlusPopularSearches table.graphTable{width: 90%;}
+	#SearchPlusPopularSearches tr{}
+		#SearchPlusPopularSearches td{}
+			#SearchPlusPopularSearches td .addRecommendations {font-size: 0.8em;}
+			#SearchPlusPopularSearches td.title{width: 20%; text-align: right;}
+			#SearchPlusPopularSearches td.background{background-color: grey; width: 80%; color: white;}
+			#SearchPlusPopularSearches td.background div.foreground{background-color: green; padding: 3px;}
+

@@ -1,0 +1,1 @@
+Results $From <span class="littleWord">-</span> $To <span class="littleWord">of</span> $Total</span>
