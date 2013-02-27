@@ -1,5 +1,5 @@
 {
-	"name": "silverstripe/searchplus",
+	"name": "sunnysideup/searchplus",
 	"type": "silverstripe-module",
 	"description": "adds additional functionality to the standards Silverstripe Search",
 	"homepage": "http://www.silverstripe-webdevelopment.com",
