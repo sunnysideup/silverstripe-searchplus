@@ -19,11 +19,11 @@ class SearchPlusPage extends Page {
 		"RecommendedSearchPlusSections" => "RecommendedSearchPlusSection"
 	);
 
-	public function canCreate() {
+	public function canCreate($member = null) {
 		return !DataObject::get_one("SiteTree", "ClassName = 'SearchPlusPage'");
 	}
 
-	public function canDelete() {
+	public function canDelete($member = null) {
 		return false;
 	}
 
