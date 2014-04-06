@@ -2,13 +2,13 @@
 <% include SearchPlusMoreThanOnePage %>
 <% if Results %>
 <ul id="SearchResults">
-<% with/loop Results %>
+<% loop Results %>
 	<li class="$EvenOdd $FirstLast <% if IsRecommended %>recommended<% end_if %>">
 		<h3><a href="$Link"><% if MenuTitle %>$HighlightedTitle<% end_if %></a></h3>
 		<p>$Content.ContextSummary(300) ...</p>
 		<a href="$Link" title="Read more about $Title.ATT">Read more &gt;&gt;</a>
 	</li>
-<% end_with/loop %>
+<% end_loop %>
 </ul>
 <% else %>
 <p class="SearchPlusSearchResultListRegret">Sorry, no pages matched your search, please try again.</p>

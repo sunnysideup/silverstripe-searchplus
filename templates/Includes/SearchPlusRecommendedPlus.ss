@@ -1,11 +1,11 @@
 <% if RecommendedSearchPlusSection %>
 <div id="RecommendedSearchPlusSections">
-	<% with/loop RecommendedSearchPlusSection %>
+	<% loop RecommendedSearchPlusSection %>
 	<div class="recommendedSearchPlusSectionOne">
 		<h3>$Title</h3>
 		<p>$Intro</p>
-		<% if ParentPage %><% with/loop ParentPage %><ul><% with/loop Children %><li class="$FirstLast $EvenOdd item"><a href="$Link">$Title</a></li><% end_with/loop %></ul><% end_with/loop %><% end_if %>
+		<% if ParentPage %><% with ParentPage %><ul><% loop Children %><li class="$FirstLast $EvenOdd item"><a href="$Link">$Title</a></li><% end_loop %></ul><% end_with %><% end_if %>
 	</div>
-	<% end_with/loop %>
+	<% end_loop %>
 </div>
 <% end_if %>
