@@ -1,0 +1,5 @@
+SearchHistory:
+  set_separator: ' | '
+  minimum_length: 5
+  number_of_keyword_repeats: 7
+  result_length: 30

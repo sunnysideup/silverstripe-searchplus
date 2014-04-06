@@ -15,8 +15,8 @@
 class SearchPlusSearchForm extends Extension {
 
 	function SearchPlusForm($name = "SearchForm", $fieldName = "Search", $fieldLabel = '') {
-		$action = Director::URLParam("Action");
-		$page = DataObject::get_one("SearchPlusPage");
+		$action = $this->getRequest()->param("Action");
+		$page = SearchPlusPage::get()->first();
 		if($page) {//!in_array($action, array("login", "logout")) &&
 			if(!$fieldLabel) {
 				if( isset($_REQUEST[$fieldName]) ) {
@@ -35,14 +35,14 @@ class SearchPlusSearchForm extends Extension {
 				$searchText = '';
 			}
 			$field = new TextField($fieldName, $fieldLabel, $searchText);
-			$fields = new FieldSet($field);
-			$actions = new FieldSet(
+			$fields = new FieldList($field);
+			$actions = new FieldList(
 				new FormAction('results', 'Search')
 			);
 			$form = new SearchForm($this, $name, $fields, $actions);
 
 			$form->setFormAction($page->Link()."results/");
-			$form->setPageLength(SearchPlusPage::get_result_length());
+			$form->setPageLength(Config::inst()->get("SearchPlusPage", "result_length"));
 			$form->unsetValidator();
 			return $form;
 		}

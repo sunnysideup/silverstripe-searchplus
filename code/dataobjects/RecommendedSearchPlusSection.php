@@ -11,36 +11,36 @@
 
 class RecommendedSearchPlusSection Extends DataObject {
 
-	static $db = array(
+	private static $db = array(
 		"Title" => "Varchar(255)",
 		"Intro" => "Text",
 		"Sort" => "Int"
 	);
 
-	static $has_one = array(
+	private static $has_one = array(
 		"ParentPage" => "Page",
 		"Parent" => "SearchPlusPage"
 	);
 
-	static $defaults = array(
+	private static $defaults = array(
 		"Sort" => 100
 	);
 
-	static $singular_name = 'Recommended SearchPlus Section';
+	private static $singular_name = 'Recommended SearchPlus Section';
 
-	static $plural_name = 'Recommended SearchPlus Sections';
+	private static $plural_name = 'Recommended SearchPlus Sections';
 
-	static $default_sort = 'Sort, Title';
+	private static $default_sort = 'Sort, Title';
 
-	public static $searchable_fields = array(
+	private static $searchable_fields = array(
 		"Title"
 	);
 
-	public static $summary_fields = array(
+	private static $summary_fields = array(
 		"Title", "Sort"
 	);
 
-	public static $field_labels = array(
+	private static $field_labels = array(
 		"Sort" => "Sort Index"
 	);
 
@@ -55,7 +55,7 @@ class RecommendedSearchPlusSection Extends DataObject {
 	function onBeforeWrite() {
 		parent::onBeforeWrite();
 		if(!$this->ParentID) {
-			if($page = DataObject::get_one("SearchPlusPage")) {
+			if($page = SearchPlusPage::get()->first()) {
 				$this->ParentID = $page->ID;
 			}
 			else{
