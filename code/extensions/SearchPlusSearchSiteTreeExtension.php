@@ -8,5 +8,5 @@
 class SearchPlusSearchSiteTreeExtension extends Extension {
 	private static $db = array(
 		"MetaKeywords" => "Text"
-	)
+	);
 }
