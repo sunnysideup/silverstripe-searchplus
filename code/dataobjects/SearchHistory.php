@@ -70,7 +70,7 @@ class SearchHistory Extends DataObject {
 
 	public static function find_entry($KeywordString) {
 		$KeywordString = self::clean_keywordstring($KeywordString);
-		return SearchHistory::get()->filter(array("Title" => $KeywordString)->first();
+		return SearchHistory::get()->filter(array("Title" => $KeywordString))->first();
 	}
 
 	static function clean_keywordstring($KeywordString) {
