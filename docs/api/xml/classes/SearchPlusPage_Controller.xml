@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SearchPlusPage_Controller" namespace="" name="SearchPlusPage_Controller" abstract="false" final="false" start="57" end="247">
+  <file path="/var/www/_modules/searchplus/trunk/docs/en/phpdox/../../../code" file="SearchPlusPage.php" realpath="/var/www/_modules/searchplus/trunk/code/SearchPlusPage.php" size="7948" time="2015-03-14T10:23:53+13:00" unixtime="1426281833" sha1="0f9f51c1aa4c8bbd3b9fee4ebd068f643c6fe616" relative="code/SearchPlusPage.php"/>
+  <extends full="Page_Controller" namespace="" name="Page_Controller"/>
+  <method name="init" start="59" end="62" abstract="false" final="false" static="false" visibility="public"/>
+  <member name="search_history_object" type="{unknown}" default="null" visibility="private" line="64"/>
+  <method name="Form" start="66" end="68" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="results" start="70" end="149" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="there is a search" line="72"/>
+      <comment value="redirect if needed" line="77"/>
+      <comment value="load data for recommended pages" line="97"/>
+      <comment value="work out positions" line="106"/>
+      <comment value="highlight search text and check which ones are recommended" line="121"/>
+    </inline>
+  </method>
+  <method name="Recommendations" start="151" end="155" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="HasPopularSearchWords" start="157" end="159" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="PopularSearchWordsForAllUsers" start="161" end="164" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="days" byreference="false" type="integer" default="100"/>
+    <parameter name="limit" byreference="false" type="integer" default="7"/>
+  </method>
+  <method name="popularsearchwords" start="166" end="182" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="HTTPRequest" byreference="false" type="object">
+      <type full="\\HTTPRequest" namespace="\" name="HTTPRequest"/>
+    </parameter>
+  </method>
+  <method name="getPopularSearchWords" start="184" end="244" abstract="false" final="false" static="false" visibility="protected">
+    <parameter name="days" byreference="false" type="{unknown}"/>
+    <parameter name="limit" byreference="false" type="{unknown}"/>
+    <parameter name="mergeRedirects" byreference="false" type="{unknown}" default="false"/>
+  </method>
+</class>

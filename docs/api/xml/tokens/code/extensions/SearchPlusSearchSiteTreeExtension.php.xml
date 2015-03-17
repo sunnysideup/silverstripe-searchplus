@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/_modules/searchplus/trunk/docs/en/phpdox/../../../code/extensions" file="SearchPlusSearchSiteTreeExtension.php" realpath="/var/www/_modules/searchplus/trunk/code/extensions/SearchPlusSearchSiteTreeExtension.php" size="195" time="2015-03-14T10:23:53+13:00" unixtime="1426281833" sha1="b0c4c8e3e51330ffb6e5b443bc3a0c8066cdfa53" relative="code/extensions/SearchPlusSearchSiteTreeExtension.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="4">
+    <token name="T_COMMENT"> * @author: nicolaas[at]sunnysideup.co.nz</token>
+  </line>
+  <line no="5">
+    <token name="T_COMMENT"> *</token>
+  </line>
+  <line no="6">
+    <token name="T_COMMENT"> **/</token>
+  </line>
+  <line no="7"/>
+  <line no="8">
+    <token name="T_CLASS">class</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">SearchPlusSearchSiteTreeExtension</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_EXTENDS">extends</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Extension</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="9">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PRIVATE">private</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STATIC">static</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$db</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_ARRAY">array</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+  </line>
+  <line no="10">
+    <token name="T_WHITESPACE">		</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"MetaKeywords"</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"Text"</token>
+  </line>
+  <line no="11">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="12">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="13"/>
+</source>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SearchHistoryLog" namespace="" name="SearchHistoryLog" abstract="false" final="false" start="172" end="184">
+  <file path="/var/www/_modules/searchplus/trunk/docs/en/phpdox/../../../code/dataobjects" file="SearchHistory.php" realpath="/var/www/_modules/searchplus/trunk/code/dataobjects/SearchHistory.php" size="5777" time="2015-03-14T10:23:53+13:00" unixtime="1426281833" sha1="d3445678ad0ca0259ea69ac6cb708d8f3d5de4b1" relative="code/dataobjects/SearchHistory.php"/>
+  <extends full="DataObject" namespace="" name="DataObject"/>
+  <member name="has_one" type="array" visibility="private" line="174"/>
+  <member name="singular_name" type="string" default="'Search History Log Entry'" visibility="private" line="178"/>
+  <member name="plural_name" type="string" default="'Search History Log Entries'" visibility="private" line="180"/>
+  <member name="default_sort" type="string" default="'Created DESC'" visibility="private" line="182"/>
+</class>

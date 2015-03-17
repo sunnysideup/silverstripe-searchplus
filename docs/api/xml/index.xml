@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index xmlns="http://xml.phpdox.net/src" basedir="/var/www/_modules/searchplus/trunk">
+  <namespace name="">
+    <class name="SearchPlusModelAdmin" src="code/admin/SearchPlusModelAdmin.php" xml="classes/SearchPlusModelAdmin.xml"/>
+    <class name="SearchPlusSearchForm" src="code/extensions/SearchPlusSearchForm.php" xml="classes/SearchPlusSearchForm.xml"/>
+    <class name="SearchPlusSearchSiteTreeExtension" src="code/extensions/SearchPlusSearchSiteTreeExtension.php" xml="classes/SearchPlusSearchSiteTreeExtension.xml"/>
+    <class name="SearchPlusPage" src="code/SearchPlusPage.php" xml="classes/SearchPlusPage.xml"/>
+    <class name="SearchPlusPage_Controller" src="code/SearchPlusPage.php" xml="classes/SearchPlusPage_Controller.xml"/>
+    <class name="RecommendedSearchPlusSection" src="code/dataobjects/RecommendedSearchPlusSection.php" description="author: nicolaas[at]sunnysideup.co.nz description: a log history and counted history of searches done (e.g. 100 people searched for &quot;sunshine&quot;) it allows gives the opportunity to link zero or more pages to a particular search phrase" xml="classes/RecommendedSearchPlusSection.xml"/>
+    <class name="SearchHistory" src="code/dataobjects/SearchHistory.php" description="author: nicolaas[at]sunnysideup.co.nz description: a log history and counted history of searches done (e.g. 100 people searched for &quot;sunshine&quot;) it allows gives the opportunity to link zero or more pages to a particular search phrase" xml="classes/SearchHistory.xml"/>
+    <class name="SearchHistoryLog" src="code/dataobjects/SearchHistory.php" xml="classes/SearchHistoryLog.xml"/>
+  </namespace>
+</index>

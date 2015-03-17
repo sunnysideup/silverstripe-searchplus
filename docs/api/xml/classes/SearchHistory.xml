@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SearchHistory" namespace="" name="SearchHistory" abstract="false" final="false" start="12" end="168">
+  <file path="/var/www/_modules/searchplus/trunk/docs/en/phpdox/../../../code/dataobjects" file="SearchHistory.php" realpath="/var/www/_modules/searchplus/trunk/code/dataobjects/SearchHistory.php" size="5777" time="2015-03-14T10:23:53+13:00" unixtime="1426281833" sha1="d3445678ad0ca0259ea69ac6cb708d8f3d5de4b1" relative="code/dataobjects/SearchHistory.php"/>
+  <docblock>
+    <description compact="author: nicolaas[at]sunnysideup.co.nz description: a log history and counted history of searches done (e.g. 100 people searched for &quot;sunshine&quot;) it allows gives the opportunity to link zero or more pages to a particular search phrase"/>
+  </docblock>
+  <extends full="DataObject" namespace="" name="DataObject"/>
+  <member name="db" type="array" visibility="private" line="14"/>
+  <member name="has_many" type="array" visibility="private" line="19"/>
+  <member name="many_many" type="array" visibility="private" line="23"/>
+  <member name="singular_name" type="string" default="'Search History Phrase'" visibility="private" line="27"/>
+  <member name="plural_name" type="string" default="'Search History Phrases'" visibility="private" line="29"/>
+  <member name="default_sort" type="string" default="'Title'" visibility="private" line="31"/>
+  <member name="separator" type="string" default="&quot; | &quot;" visibility="private" line="33"/>
+  <member name="minimum_length" type="integer" default="3" visibility="private" line="35"/>
+  <member name="number_of_keyword_repeats" type="integer" default="3" visibility="private" line="37"/>
+  <member name="searchable_fields" type="array" visibility="private" line="39"/>
+  <member name="summary_fields" type="array" visibility="private" line="44"/>
+  <member name="field_labels" type="array" visibility="private" line="48"/>
+  <method name="add_entry" start="54" end="69" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="KeywordString" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="find_entry" start="71" end="74" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="KeywordString" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="clean_keywordstring" start="76" end="80" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="KeywordString" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getCMSFields" start="82" end="113" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="$fields-&gt;addFieldToTab(&quot;Root.Main&quot;, new MultiSelectField($name = &quot;Recommendations&quot;, $title = &quot;Recommendations&quot;, $sourceArray));" line="92"/>
+    </inline>
+  </method>
+  <method name="onAfterWrite" start="115" end="154" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="add recommendations that are not actually matching" line="118"/>
+      <comment value="delete useless ones" line="150"/>
+    </inline>
+  </method>
+  <method name="requireDefaultRecords" start="156" end="166" abstract="false" final="false" static="false" visibility="public"/>
+</class>

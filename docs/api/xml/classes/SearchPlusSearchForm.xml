@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SearchPlusSearchForm" namespace="" name="SearchPlusSearchForm" abstract="false" final="false" start="15" end="55">
+  <file path="/var/www/_modules/searchplus/trunk/docs/en/phpdox/../../../code/extensions" file="SearchPlusSearchForm.php" realpath="/var/www/_modules/searchplus/trunk/code/extensions/SearchPlusSearchForm.php" size="1679" time="2015-03-14T10:23:53+13:00" unixtime="1426281833" sha1="37bd013a8120d48c783431b37b85281cf6b46ed3" relative="code/extensions/SearchPlusSearchForm.php"/>
+  <extends full="Extension" namespace="" name="Extension"/>
+  <method name="SearchPlusForm" start="17" end="52" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="name" byreference="false" type="string" default="&quot;SearchForm&quot;"/>
+    <parameter name="fieldName" byreference="false" type="string" default="&quot;Search&quot;"/>
+    <parameter name="fieldLabel" byreference="false" type="string" default="''"/>
+    <inline>
+      <comment value="!in_array($action, array(&quot;login&quot;, &quot;logout&quot;)) &amp;&amp;" line="20"/>
+      <comment value="we set $_REQUEST[&quot;Search&quot;] below because it is also used by things like Text::ContextSummary" line="24"/>
+    </inline>
+  </method>
+</class>

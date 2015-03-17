@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SearchPlusModelAdmin" namespace="" name="SearchPlusModelAdmin" abstract="false" final="false" start="7" end="15">
+  <file path="/var/www/_modules/searchplus/trunk/docs/en/phpdox/../../../code/admin" file="SearchPlusModelAdmin.php" realpath="/var/www/_modules/searchplus/trunk/code/admin/SearchPlusModelAdmin.php" size="272" time="2015-03-14T10:23:53+13:00" unixtime="1426281833" sha1="e8f5894fe8ec09572cd7c1c72a2af54798ac43f1" relative="code/admin/SearchPlusModelAdmin.php"/>
+  <docblock>
+    <description/>
+    <author value="Nicolaas [at] sunnysideup.co.nz"/>
+  </docblock>
+  <extends full="ModelAdmin" namespace="" name="ModelAdmin"/>
+  <member name="managed_models" type="array" visibility="private" line="9"/>
+  <member name="url_segment" type="string" default="'searchplus'" visibility="private" line="11"/>
+  <member name="menu_title" type="string" default="'Search'" visibility="private" line="13"/>
+</class>
