@@ -4,12 +4,12 @@
  * @author Nicolaas [at] sunnysideup.co.nz
  **/
 
-class SearchPlusModelAdmin extends ModelAdmin {
+class SearchPlusModelAdmin extends ModelAdmin
+{
 
-	private static $managed_models = array("SearchHistory");
+    private static $managed_models = array("SearchHistory");
 
-	private static $url_segment = 'searchplus';
+    private static $url_segment = 'searchplus';
 
-	private static $menu_title = 'Search';
-
+    private static $menu_title = 'Search';
 }
