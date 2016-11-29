@@ -9,59 +9,59 @@
  *
  **/
 
-class RecommendedSearchPlusSection Extends DataObject {
+class RecommendedSearchPlusSection extends DataObject
+{
+    private static $db = array(
+        "Title" => "Varchar(255)",
+        "Intro" => "Text",
+        "Sort" => "Int"
+    );
 
-	private static $db = array(
-		"Title" => "Varchar(255)",
-		"Intro" => "Text",
-		"Sort" => "Int"
-	);
+    private static $has_one = array(
+        "ParentPage" => "Page",
+        "Parent" => "SearchPlusPage"
+    );
 
-	private static $has_one = array(
-		"ParentPage" => "Page",
-		"Parent" => "SearchPlusPage"
-	);
+    private static $defaults = array(
+        "Sort" => 100
+    );
 
-	private static $defaults = array(
-		"Sort" => 100
-	);
+    private static $singular_name = 'Recommended SearchPlus Section';
 
-	private static $singular_name = 'Recommended SearchPlus Section';
+    private static $plural_name = 'Recommended SearchPlus Sections';
 
-	private static $plural_name = 'Recommended SearchPlus Sections';
+    private static $default_sort = 'Sort, Title';
 
-	private static $default_sort = 'Sort, Title';
+    private static $searchable_fields = array(
+        "Title"
+    );
 
-	private static $searchable_fields = array(
-		"Title"
-	);
+    private static $summary_fields = array(
+        "Title", "Sort"
+    );
 
-	private static $summary_fields = array(
-		"Title", "Sort"
-	);
+    private static $field_labels = array(
+        "Sort" => "Sort Index"
+    );
 
-	private static $field_labels = array(
-		"Sort" => "Sort Index"
-	);
+    public function getCMSFields()
+    {
+        $fields = parent::getCMSFields();
+        $fields->removeByName("ParentPageID");
+        $fields->removeByName("ParentID");
+        $fields->addFieldToTab("Root.Main", new TreeDropdownField($name = "ParentPageID", $title = "Parent Page (show all child pages as links for this recommended section)", $sourceObject = "SiteTree"));
+        return $fields;
+    }
 
-	function getCMSFields() {
-		$fields = parent::getCMSFields();
-		$fields->removeByName("ParentPageID");
-		$fields->removeByName("ParentID");
-		$fields->addFieldToTab("Root.Main", new TreeDropdownField($name = "ParentPageID", $title = "Parent Page (show all child pages as links for this recommended section)", $sourceObject = "SiteTree"));
-		return $fields;
-	}
-
-	function onBeforeWrite() {
-		parent::onBeforeWrite();
-		if(!$this->ParentID) {
-			if($page = SearchPlusPage::get()->first()) {
-				$this->ParentID = $page->ID;
-			}
-			else{
-				user_error("Make sure to create a SearchPlusPage", E_USER_NOTICE);
-			}
-		}
-	}
-
+    public function onBeforeWrite()
+    {
+        parent::onBeforeWrite();
+        if (!$this->ParentID) {
+            if ($page = SearchPlusPage::get()->first()) {
+                $this->ParentID = $page->ID;
+            } else {
+                user_error("Make sure to create a SearchPlusPage", E_USER_NOTICE);
+            }
+        }
+    }
 }

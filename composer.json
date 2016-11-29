@@ -3,8 +3,10 @@
     "type": "silverstripe-module",
     "description": "adds additional functionality to the standards Silverstripe Search",
     "keywords": [
-        "searchplus",
-        "silverstripe"
+        "Silverstripe-CMS",
+        "CMS",
+        "Silverstripe",
+        "searchplus"
     ],
     "license": "Sunny Side Up (BSD-3-Clause and CUSTOM)",
     "authors": [
