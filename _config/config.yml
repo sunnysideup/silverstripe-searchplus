@@ -1,7 +1,4 @@
 ContentController:
-  extensions:
-    - SearchPlusSearchForm
-
+    extensions: [SearchPlusSearchForm]
 SiteTree:
-  extensions:
-    - SearchPlusSearchSiteTreeExtension
+    extensions: [SearchPlusSearchSiteTreeExtension]
