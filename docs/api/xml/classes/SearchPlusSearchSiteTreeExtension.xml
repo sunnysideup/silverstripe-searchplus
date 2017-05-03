@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="SearchPlusSearchSiteTreeExtension" namespace="" name="SearchPlusSearchSiteTreeExtension" abstract="false" final="false" start="8" end="12">
-  <file path="/var/www/_modules/searchplus/trunk/docs/en/phpdox/../../../code/extensions" file="SearchPlusSearchSiteTreeExtension.php" realpath="/var/www/_modules/searchplus/trunk/code/extensions/SearchPlusSearchSiteTreeExtension.php" size="195" time="2015-03-14T10:23:53+13:00" unixtime="1426281833" sha1="b0c4c8e3e51330ffb6e5b443bc3a0c8066cdfa53" relative="code/extensions/SearchPlusSearchSiteTreeExtension.php"/>
-  <extends full="Extension" namespace="" name="Extension"/>
-  <member name="db" type="array" visibility="private" line="9"/>
-</class>
